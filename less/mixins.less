@@ -1,0 +1,26 @@
+// Mixins in here
+.custom-btn (@width, @rem) {
+    display: block;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    padding: 6px 0;
+    background-color: @eastern-blue;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: @width;
+    font-size: @rem;
+
+    &:hover {
+        background-color: @sandy-beach;
+        color: @eastern-blue;
+        // border-color: 2px solid @eastern-blue;
+        margin: 0 10px 20px;
+        padding: 6px 0;}
+
+    //end of hover
+}
+
+//end of custom-btn
