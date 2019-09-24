@@ -1,11 +1,11 @@
 // Mixins in here
-.custom-btn (@width, @rem) {
+.custom-btn (@width, @rem, @color, @bck-gorund) {
     display: block;
     border-radius: 10px;
     margin: 0 10px 20px;
     padding: 6px 0;
-    background-color: @eastern-blue;
-    color: white;
+    background-color: @bck-gorund;
+    color: @color;
     cursor: pointer;
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,11 +14,12 @@
     font-size: @rem;
 
     &:hover {
-        background-color: @sandy-beach;
-        color: @eastern-blue;
+        background-color: @lightpurple;
+        color: @white;
         // border-color: 2px solid @eastern-blue;
-        margin: 0 10px 20px;
-        padding: 6px 0;}
+        margin: 1%;
+        padding: 2% 0;
+    }
 
     //end of hover
 }

@@ -107,9 +107,6 @@ section {
 body {
   line-height: 1;
 }
-html {
-  max-width: 100%;
-}
 ol,
 ul {
   list-style: none;
@@ -156,6 +153,7 @@ h2 {
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  text-decoration: underline;
 }
 p {
   line-height: 1.5;
@@ -167,13 +165,11 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-.bck-ground {
-  background-color: indigo;
+.lightgreen {
+  background-color: rgba(0, 250, 154, 0.712);
+  color: #FAFAFA;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .nav-header {
   width: 100%;
@@ -182,12 +178,6 @@ img {
   justify-content: flex-end;
   max-width: 800px;
   margin: 0 auto;
-}
-.nav-header .title {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 .nav-header #nav {
   width: 100%;
@@ -201,4 +191,104 @@ img {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
+}
+footer {
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .bck-ground {
+  height: 400px;
+  background-color: #5F336C;
+}
+.about .container1 {
+  width: 75%;
+  height: auto;
+}
+.about .container1 img {
+  max-width: 100%;
+  height: auto;
+}
+.about .bottom-btn {
+  flex-direction: row;
+}
+.product header {
+  display: flex;
+  flex-direction: column;
+}
+.product header .recptLogo {
+  width: 90%;
+}
+.product header #nav a {
+  margin: 5% 1%;
+  width: 10%;
+  font-size: 2.6rem;
+}
+.product .about-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product .about-top-content .top-right-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product .about-top-content .top-right-content .app-img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.product .about-top-content .top-right-content .app-img .appLogo {
+  width: 10%;
+  height: 80%;
+  margin: 1%;
+}
+.product .about-top-content .top-right-content .btn-display {
+  display: flex;
+  width: 30%;
+  height: 50px;
+  margin: 3%;
+}
+.product .about-top-content .top-right-content .btn-display button {
+  width: 100%;
+  border-radius: 10px;
+}
+.product .about-top-content .imgCoffeeShop {
+  max-width: 35%;
+  height: auto;
+  margin: 0;
+  border-radius: 110px;
+}
+.product .bottom-content {
+  display: flex;
+  align-content: center;
+}
+.product .bottom-content .btm-text {
+  margin: 1%;
+}
+.product .bottom-content .btm-text .btn {
+  display: block;
+  border-radius: 10px;
+  margin: 0 10px 20px;
+  padding: 6px 0;
+  background-color: #5F336C;
+  color: #BAA6CE;
+  cursor: pointer;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 150px;
+  font-size: 1.6rem;
+}
+.product .bottom-content .btm-text .btn:hover {
+  background-color: #BAA6CE;
+  color: #FAFAFA;
+  margin: 1%;
+  padding: 2% 0;
 }
