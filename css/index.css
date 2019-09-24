@@ -192,6 +192,10 @@ img {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
+.nav-header #nav a:hover {
+  color: #FAFAFA;
+  font-size: 2.3rem;
+}
 footer {
   width: 100%;
 }
@@ -204,23 +208,92 @@ footer p {
   height: 400px;
   background-color: #5F336C;
 }
-.about .container1 {
-  width: 75%;
-  height: auto;
+.about {
+  max-width: 100%;
 }
-.about .container1 img {
+.about header {
+  width: 73%;
+  background-color: #BAA6CE;
+  height: auto;
+  border-radius: 20px;
+  padding: 1%;
+}
+.about header .recptLogo {
+  width: 45%;
+}
+.about header #nav {
+  width: 50%;
+  padding: 6% 0 0 0;
+}
+.about header #nav a {
+  margin: 5% 1%;
+  width: 10%;
+  font-size: 1.9rem;
+}
+.about .container1 {
   max-width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.about .container1 .side-img {
+  margin: 3% 5%;
+}
+.about .container1 .side-img img {
+  width: 100%;
+  height: auto;
+}
+.about article {
+  margin: 5%;
+  padding: 0 9%;
+}
+.about article .greyBck-ground {
+  background-color: rgba(211, 211, 211, 0.342);
+  padding: 5%;
+  border-radius: 20px;
+  border: 4px dashed rgba(211, 211, 211, 0.425);
+}
+.about article .meetTheTeam {
+  display: flex;
+  font-size: 1.9rem;
+}
+.about article .meetTheTeam .teamTitle {
+  width: 60%;
+  padding: 4% 0 0 3%;
+}
+.about article .meetTheTeam .list {
+  margin: 3% 0;
+  width: 100%;
+}
+.about article .meetTheTeam .list ul {
+  width: 100%;
+}
+.about article .meetTheTeam .list li {
+  width: 100%;
+  margin: 1%;
+  padding: 2%;
+  font-size: 1.6rem;
+}
+.about article .meetTheTeam .list li a {
+  color: #5F336C;
+}
+.about article .meetTheTeam .list li a:hover {
+  font-size: 2.3rem;
 }
 .about .bottom-btn {
   flex-direction: row;
+  align-content: center;
 }
 .product header {
   display: flex;
   flex-direction: column;
 }
 .product header .recptLogo {
-  width: 90%;
+  width: 80%;
+}
+.product header #nav {
+  width: 50%;
 }
 .product header #nav a {
   margin: 5% 1%;
@@ -245,22 +318,22 @@ footer p {
   justify-content: center;
 }
 .product .about-top-content .top-right-content .app-img .appLogo {
-  width: 10%;
-  height: 80%;
+  width: 5%;
+  height: auto;
   margin: 1%;
 }
 .product .about-top-content .top-right-content .btn-display {
   display: flex;
-  width: 30%;
+  width: 25%;
   height: 50px;
-  margin: 3%;
+  margin: 3% 0 0 0;
 }
 .product .about-top-content .top-right-content .btn-display button {
   width: 100%;
   border-radius: 10px;
 }
 .product .about-top-content .imgCoffeeShop {
-  max-width: 35%;
+  max-width: 27%;
   height: auto;
   margin: 0;
   border-radius: 110px;
