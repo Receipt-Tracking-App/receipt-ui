@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v8/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,7 +183,7 @@ img {
   color: rgba(0, 250, 154, 0.712);
 }
 .lightpurple {
-  background-color: #BAA6CE;
+  background-color: #5F336C;
   color: #FAFAFA;
   font-size: 2rem;
   font-weight: bold;
@@ -203,7 +210,7 @@ img {
   margin: 10%;
   display: inline-block;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
 }
 .nav-header #nav a:hover {
@@ -222,7 +229,7 @@ footer p {
   width: 100%;
   height: auto;
   padding: 5%;
-  background-color: #5F336C;
+  background-color: #BAA6CE;
 }
 .home header .recptLogo {
   width: 45%;
@@ -234,8 +241,9 @@ footer p {
 .home header #nav a {
   margin: 5% 1%;
   width: 10%;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
   color: #FAFAFA;
+  font-weight: 900;
 }
 .home .top-content {
   display: flex;
@@ -324,11 +332,7 @@ footer p {
     display: none;
   }
 }
-.about {
-  max-width: 100%;
-}
 .about header {
-  width: 73%;
   background-color: #BAA6CE;
   height: auto;
   border-radius: 20px;
@@ -344,33 +348,30 @@ footer p {
 .about header #nav a {
   margin: 5% 1%;
   width: 10%;
-  font-size: 1.9rem;
-}
-.about .container1 {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-}
-.about .container1 .side-img {
-  margin: 3% 5%;
-}
-.about .container1 .side-img img {
-  width: 100%;
-  height: auto;
+  font-size: 2.3rem;
+  color: #FAFAFA;
+  font-weight: 900;
 }
 .about article {
   margin: 5%;
   padding: 0 9%;
 }
 .about article .greyBck-ground {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: rgba(211, 211, 211, 0.342);
   padding: 5%;
   border-radius: 20px;
   border: 4px dashed rgba(211, 211, 211, 0.425);
 }
+.about article .greyBck-ground h2 {
+  padding: 0 0 3% 0;
+}
 .about article .meetTheTeam {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   font-size: 1.9rem;
 }
@@ -401,18 +402,26 @@ footer p {
   flex-direction: row;
   align-content: center;
 }
-@media (max-width: 907px) {
-  .about .meetTheTeam {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 595px) {
+@media (max-width: 827px) {
   .about .nav-header {
     flex-direction: column;
   }
   .about .nav-header #nav {
     width: 100%;
+  }
+  .about .meetTheTeam {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .meetTheTeam .teamTitle {
+    text-align: center;
+  }
+  .about .meetTheTeam .list {
+    align-items: center;
+    border: 1px solid blue;
+  }
+  .about .meetTheTeam .list li {
+    text-align: center;
   }
 }
 .product header {
@@ -428,8 +437,9 @@ footer p {
 .product header #nav a {
   margin: 5% 1%;
   width: 10%;
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   color: #FAFAFA;
+  font-weight: 900;
 }
 .product header #nav a:hover {
   font-size: 3rem;

@@ -3,7 +3,7 @@
         width: 100%;
         height: auto;
         padding: 5%;
-        background-color: #5F336C;
+        background-color: @lightpurple;
     }
 
     header {
@@ -19,8 +19,9 @@
             a {
                 margin: 5% 1%;
                 width: 10%;
-                font-size: 1.9rem;
+                font-size: 2.3rem;
                 color: @white;
+                font-weight: 900;
             }
 
         }
@@ -40,6 +41,7 @@
                 width: 100%;
                 height: auto;
                 margin: 3% 0 0 0;
+
 
                 .lightpurple {
                     width: 100%;
@@ -137,14 +139,14 @@
 
 
 .about {
-    max-width: 100%;
 
     header {
-        width: 73%;
+
         background-color: @lightpurple;
         height: auto;
         border-radius: 20px;
         padding: 1%;
+
 
 
 
@@ -159,29 +161,11 @@
             a {
                 margin: 5% 1%;
                 width: 10%;
-                font-size: 1.9rem;
+                font-size: 2.3rem;
+                color: @white;
+                font-weight: 900;
             }
 
-        }
-    }
-
-
-
-    .container1 {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        padding: 1%;
-
-        .side-img {
-            margin: 3% 5%;
-
-            img {
-                width: 100%;
-                height: auto;
-
-            }
         }
     }
 
@@ -190,13 +174,23 @@
         padding: 0 9%;
 
         .greyBck-ground {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
             background-color: rgba(211, 211, 211, 0.342);
             padding: 5%;
             border-radius: 20px;
             border: 4px dashed rgba(211, 211, 211, 0.425);
+
+            h2 {
+                padding: 0 0 3% 0;
+            }
         }
 
         .meetTheTeam {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
             display: flex;
             // border: 1px solid red;
             font-size: 1.9rem;
@@ -244,24 +238,6 @@
     }
 
     @media @tablet {
-        .meetTheTeam {
-            flex-direction: column;
-            align-items: center;
-
-
-            // .list {
-            //     align-items: center;
-            //     border: 1px solid blue;
-
-            //     li {
-            //         padding: 0 5%;
-            //     }
-            // }
-
-        }
-    }
-
-    @media @mobile {
         .nav-header {
             flex-direction: column;
 
@@ -269,7 +245,28 @@
                 width: 100%;
             }
         }
+
+        .meetTheTeam {
+            flex-direction: column;
+            align-items: center;
+
+            .teamTitle {
+                text-align: center;
+            }
+
+            .list {
+                align-items: center;
+                border: 1px solid blue;
+
+                li {
+                    text-align: center;
+                }
+            }
+
+        }
     }
+
+
 
 }
 
@@ -289,8 +286,9 @@
             a {
                 margin: 5% 1%;
                 width: 10%;
-                font-size: 2.6rem;
+                font-size: 2.3rem;
                 color: @white;
+                font-weight: 900;
 
                 &:hover {
                     font-size: 3rem;
