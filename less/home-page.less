@@ -1,10 +1,82 @@
 .home {
-
-
     .bck-ground {
-        height: 400px;
+        width: 100%;
+        height: auto;
+        padding: 5%;
         background-color: #5F336C;
     }
+
+    header {
+
+        .recptLogo {
+            width: 45%;
+        }
+
+        #nav {
+            width: 50%;
+            padding: 10% 0 0 0;
+
+            a {
+                margin: 5% 1%;
+                width: 10%;
+                font-size: 1.9rem;
+                color: @white;
+            }
+
+        }
+    }
+
+    .top-content {
+        display: flex;
+        justify-content: space-evenly;
+
+        .user-btns {
+            display: flex;
+            width: 30%;
+            height: auto;
+            margin: 3% 0 0 0;
+
+            a {
+                width: 100%;
+                height: auto;
+                margin: 3% 0 0 0;
+
+                .lightpurple {
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 2%;
+
+
+                }
+
+                .lightgreen {
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 2%;
+
+                }
+            }
+
+        }
+    }
+
+
+    .bottom-content {
+        display: flex;
+        align-content: center;
+
+        .btm-text {
+            margin: 1%;
+
+            .btn {
+                .custom-btn(150px, 1.6rem, @lightpurple, @darkpurple);
+
+
+            }
+
+        }
+    }
+
 }
 
 .about {
@@ -126,12 +198,18 @@
         }
 
         #nav {
-            width: 50%;
+            width: 60%;
+
 
             a {
                 margin: 5% 1%;
                 width: 10%;
                 font-size: 2.6rem;
+                color: @white;
+
+                &:hover {
+                    font-size: 3rem;
+                }
             }
 
         }
@@ -169,18 +247,28 @@
 
             .btn-display {
                 display: flex;
-                width: 25%;
-                height: 50px;
+                width: 30%;
+                height: auto;
                 margin: 3% 0 0 0;
 
-                // flex-direction: column;
-                // border: 1px solid red;
 
-                button {
+                a {
                     width: 100%;
-                    border-radius: 10px;
+                    height: auto;
+                    margin: 3% 0 0 0;
 
-                    // .custom-btn (9%, 1.4rem, @lightgreen, @lightpurple);
+
+                    // flex-direction: column;
+                    // border: 1px solid red;
+
+                    button {
+                        width: 100%;
+                        border-radius: 10px;
+                        padding: 2%;
+
+
+                        // .custom-btn (9%, 1.4rem, @lightgreen, @lightpurple);
+                    }
                 }
 
             }
@@ -192,6 +280,10 @@
             height: auto;
             margin: 0;
             border-radius: 110px;
+
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
 
@@ -204,6 +296,8 @@
 
             .btn {
                 .custom-btn(150px, 1.6rem, @lightpurple, @darkpurple);
+
+
             }
 
         }

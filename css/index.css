@@ -171,6 +171,20 @@ img {
   font-size: 2rem;
   font-weight: bold;
 }
+.lightgreen:hover {
+  background-color: #FAFAFA;
+  color: rgba(0, 250, 154, 0.712);
+}
+.lightpurple {
+  background-color: #BAA6CE;
+  color: #FAFAFA;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.lightpurple:hover {
+  background-color: #FAFAFA;
+  color: #5F336C;
+}
 .nav-header {
   width: 100%;
   display: flex;
@@ -205,8 +219,75 @@ footer p {
   padding: 20px;
 }
 .home .bck-ground {
-  height: 400px;
+  width: 100%;
+  height: auto;
+  padding: 5%;
   background-color: #5F336C;
+}
+.home header .recptLogo {
+  width: 45%;
+}
+.home header #nav {
+  width: 50%;
+  padding: 10% 0 0 0;
+}
+.home header #nav a {
+  margin: 5% 1%;
+  width: 10%;
+  font-size: 1.9rem;
+  color: #FAFAFA;
+}
+.home .top-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .top-content .user-btns {
+  display: flex;
+  width: 30%;
+  height: auto;
+  margin: 3% 0 0 0;
+}
+.home .top-content .user-btns a {
+  width: 100%;
+  height: auto;
+  margin: 3% 0 0 0;
+}
+.home .top-content .user-btns a .lightpurple {
+  width: 100%;
+  border-radius: 10px;
+  padding: 2%;
+}
+.home .top-content .user-btns a .lightgreen {
+  width: 100%;
+  border-radius: 10px;
+  padding: 2%;
+}
+.home .bottom-content {
+  display: flex;
+  align-content: center;
+}
+.home .bottom-content .btm-text {
+  margin: 1%;
+}
+.home .bottom-content .btm-text .btn {
+  display: block;
+  border-radius: 10px;
+  margin: 0 10px 20px;
+  padding: 6px 0;
+  background-color: #5F336C;
+  color: #BAA6CE;
+  cursor: pointer;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 150px;
+  font-size: 1.6rem;
+}
+.home .bottom-content .btm-text .btn:hover {
+  background-color: #BAA6CE;
+  color: #FAFAFA;
+  margin: 1%;
+  padding: 2% 0;
 }
 .about {
   max-width: 100%;
@@ -293,12 +374,16 @@ footer p {
   width: 80%;
 }
 .product header #nav {
-  width: 50%;
+  width: 60%;
 }
 .product header #nav a {
   margin: 5% 1%;
   width: 10%;
   font-size: 2.6rem;
+  color: #FAFAFA;
+}
+.product header #nav a:hover {
+  font-size: 3rem;
 }
 .product .about-top-content {
   display: flex;
@@ -324,19 +409,28 @@ footer p {
 }
 .product .about-top-content .top-right-content .btn-display {
   display: flex;
-  width: 25%;
-  height: 50px;
+  width: 30%;
+  height: auto;
   margin: 3% 0 0 0;
 }
-.product .about-top-content .top-right-content .btn-display button {
+.product .about-top-content .top-right-content .btn-display a {
+  width: 100%;
+  height: auto;
+  margin: 3% 0 0 0;
+}
+.product .about-top-content .top-right-content .btn-display a button {
   width: 100%;
   border-radius: 10px;
+  padding: 2%;
 }
 .product .about-top-content .imgCoffeeShop {
   max-width: 27%;
   height: auto;
   margin: 0;
   border-radius: 110px;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .product .bottom-content {
   display: flex;
