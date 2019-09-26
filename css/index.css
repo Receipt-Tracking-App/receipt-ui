@@ -313,6 +313,7 @@ footer p {
   }
   .bck-ground .nav-header #nav {
     padding: 3% 0;
+    width: 100%;
   }
   .home .top-content {
     flex-direction: column;
@@ -408,6 +409,7 @@ footer p {
   }
   .about .nav-header #nav {
     width: 100%;
+    padding: 1%;
   }
   .about .meetTheTeam {
     flex-direction: column;
